@@ -1,33 +1,63 @@
 
 
 
+
+
 .back_color {
   height: 100vh;
   width: 100%;
 
   background-color: black;
   position: fixed;
-  z-index: 2;
+  z-index: -1;
 
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 
 
 
-.backgif_container > span {
-  position: fixed;
 
-  right: 3rem;
+
+
+
+.background {
+  height: 100vh;
+  width: 100%;
+
+  position: fixed;
+  z-index: -2;
+}
+
+
+
+
+.content_container {
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+.time_author {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  width: 80%;
+
+  position: fixed;
   bottom: 3rem;
   color: white;
   font-weight: 700;
 }
 
-.backgif {
-  height: 100vh;
-  width: 100%;
-
-  position: fixed;
-  z-index: -1;
+.time {
+  font-size: 3rem;
 }

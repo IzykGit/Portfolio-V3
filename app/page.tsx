@@ -1,27 +1,37 @@
+"use client"
+
 import Image from "next/image"
+
+import React, { useEffect, useState } from 'react'
 
 import HomeStyles from "./page.module.css"
 
-import backGif from "../public/35_224191,138.gif"
+import background from "../public/abstractbackground.jpg"
+import Taskbar from "./components/Taskbar"
 
-const page = () => {
-
-
+const Home = () => {
 
     return (
         <main className={HomeStyles.main}>
 
             <div className={HomeStyles.back_color}></div>
 
-            <div className={HomeStyles.backgif_container}>
-                <Image src={backGif} className={HomeStyles.backgif} alt=""/>
-                <span>Image by waneella</span>
+            <div className={HomeStyles.background_container}>
+                <Image src={background} className={HomeStyles.background} alt=""/>
             </div>
 
-            
+
+            <div className={HomeStyles.content_container}>
+
+                <Start />
+
+                <Taskbar />
+
+            </div>
+
 
         </main>
     )
 }
 
-export default page
+export default Home
